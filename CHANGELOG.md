@@ -1,3 +1,9 @@
+## 4.34.0 (Fork - Enhanced Features)
+
+FEATURES:
+
+* `azurerm_batch_pool` - add support for the `os_disk_size_gb` property to allow custom OS disk sizing ([Fork Enhancement](https://github.com/sdduursma/terraform-provider-azurerm))
+
 ## 4.33.0 (June 12, 2025)
 
 FEATURES:
