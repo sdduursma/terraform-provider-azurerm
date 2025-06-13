@@ -2,9 +2,30 @@
     <img src=".github/tf.png" alt="Terraform logo" title="Terraform" align="left" height="50" />
 </a>
 
-# Terraform Provider for Azure (Resource Manager)
+# Terraform Provider for Azure (Resource Manager) - Fork with OS Disk Size Support
 
 The AzureRM Terraform Provider allows managing resources within Azure Resource Manager.
+
+## 🚀 Enhanced Features in this Fork
+
+This fork includes additional functionality not yet available in the official provider:
+
+- **Azure Batch Pool OS Disk Size**: Added `os_disk_size_gb` attribute to `azurerm_batch_pool` resource for custom OS disk sizing
+
+## Usage
+
+Use this provider instead of the official one:
+
+```hcl
+terraform {
+  required_providers {
+    azurerm = {
+      source = "sdduursma/azurerm"
+      version = "~> 4.34"
+    }
+  }
+}
+```
 
 When using version 4.0 of the AzureRM Provider we recommend using the latest version of Terraform Core ([the latest version can be found here](https://developer.hashicorp.com/terraform/install)). 
 
